@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            border-bottom: 1px solid gray;
+            padding: 0 50px;
+            
+        }
+        .logo{
+            display: flex;
+            width: 50%;
+            justify-content: space-between;
+        }
+        .logo a{
+            text-decoration: none;
+            align-self: center;
+            font-size: larger;
+            color: black;
+        }
+        .logo a:hover{
+            text-decoration: underline;
+        }
+        header img{
+            width: 70px ;
+            height: 70px;
+
+        }
+        .logo{
+            display: flex;
+            width: 50%;
+            justify-content: space-between;   
+           
+        }
+
+        footer{
+            width: 100%;
+            text-align: center;
+            background-color: aqua;
+            padding: 5px;
+        }
+
+        .codedcroi{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 40%;
+            height: 350px;
+            padding: 20px;
+            border: 1px solid gray;
+        }
+        .ko{
+            width: 40%;
+            border: 1px solid gray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: aqua;
+            font-size: larger;
+            border-radius: 30px 0 0 30px;
+
+
+        }
+        .ko h3 {
+            padding: 0;
+            margin: 0;
+        }
+        .aloalo{
+            display: flex;
+            justify-content: center;
+            margin: 110px 0;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        input {
+            height: 30px;
+            border-radius: 10px;
+            padding-left: 10px;
+         
+        }
+        textarea {
+            padding-left: 10px;
+            border-radius: 10px;
+       
+        }
+        button {
+            width: 150px;
+            height: 30px;
+            align-self: center;
+            border-radius: 10px;
+            background-color: aqua;
+            border: none;
+        }
+        button:hover {
+            box-shadow:5px 5px 20px 0 black;    
+           
+        }
+        .banner {
+            width: 100%;
+        }
+        .banner img {
+            width: 100%;
+        }
+
+        @media screen and (max-width :990px) {
+            .logo{
+                width: 100%;
+                justify-content: space-evenly;
+                padding: 10px;  
+            }
+            .ok {
+                width: 100%;
+                text-align: center;
+                border-bottom: solid 1px gray ;
+                padding: 0;
+                
+            }
+            header {
+                padding: 0;
+            }
+            .ko {
+                width: 65%;
+                height: 200px;
+                border-radius: 15px;
+            }
+            .codedcroi{
+                width: 60%;
+                border-radius: 15px;
+            }
+        }
+        @media screen  and (max-width:576px) {
+            .aloalo{
+                flex-direction: column-reverse;
+                align-items: center;
+                gap:15px;
+              
+
+            }
+            .ko{
+                width:65%;
+                padding: 10px;
+                text-align: center;
+               
+              
+            }
+            #menu:checked~.logo{
+                display: block;
+            }
+            .logo{
+                display: none;
+                text-align: left;
+                margin-right: 10px;
+                border-bottom:none ;
+            }
+                
+
+            }
+             
+
+    </style>
+</head>
+<body>
+    <header>
+
+        <div class="ok">
+            <img src="img/image.png" alt="">
+        </div>
+        <input type="checkbox" id="menu" style="display: none;">
+            <label for="menu" ><h3>Menu</h3></label>
+        <div class="logo">
+            <a href="">Trang chủ</a>
+            <a href="">Tổng quan Thanh Hóa</a>
+            <a href="">Tin tức</a>
+            <a href="">Dịch vụ du lịch</a>
+            <a href="">Liên hệ</a>
+
+        </div>
+    </header>
+    <div class="banner">
+        <img src="img/z4934212957069_38805555a753c3c20afaa07319e5c728.jpg" alt="">
+    </div>
+
+    <div class="aloalo">
+        <div class="ko">
+            <h3>Website được thiết kế bởi Lê Đức Thắng</h3>
+            <li>Facebook: Thắng Lê</li>
+            <li>Email: Thangldph47392@fpt.edu.vn</li>   
+        </div>
+
+        <div class="codedcroi">
+            <input type="text" placeholder="Họ và tên">
+            <input type="text" placeholder="SĐT">
+            <input type="text" placeholder="Email">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Nội dung"></textarea>
+            <button>Gửi</button>
+        </div>
+    </div>
+
+    <footer>
+        <h3>Công ty du lịch THANH HOA TOURIST</h3>
+        <p>Email: Thle36472003@gmail.com <br>
+        Tổng đài : 1900 0880</p>
+    </footer>
+
+   
+
+</body>
+</html>

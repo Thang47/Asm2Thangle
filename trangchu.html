@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border-bottom: 1px solid black;
+            padding: 0 50px;
+        
+        }
+        header img {
+            width: 70px ;
+            height: 70px;
+
+        }
+        .logo{
+            display: flex;
+            width: 50%;
+            justify-content: space-between;          
+            
+        }
+        .logo a{
+            text-decoration: none;
+            align-self: center;
+            font-size: larger;
+            color: black;
+        }
+        .logo a:hover{
+            text-decoration: underline;
+        }
+        .ok1{
+            display: flex;
+            flex-direction: column;
+            width: 21%;
+            justify-content: space-evenly;
+            align-items: center;
+            border-right: 1px solid gray;
+            background-color: rgb(239, 234, 234);
+            
+        }
+        .ok1 a {
+            font-size: larger;
+            color:goldenrod;
+            text-decoration: none;
+            
+            
+        }
+        .ok1 a:hover {
+            text-decoration: underline;
+        }
+        .lamvoanhnhe{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .haha{
+            width: 25%;
+
+        }
+        .haha img{
+            width: 80%;
+            height: 150px;
+        }
+        .haha p {
+            font-size: larger;
+            height: 30px;
+        }
+        .ok2{
+            width: 75%;
+            text-align: center;
+            color:blue;
+            padding-left: 2%;
+        }
+        .alo1{
+            display: flex ;
+            flex-wrap: wrap;
+          
+        }
+        .dunganbuoi{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+        .anh4{
+            width: 25%;
+        }
+        .anh4 img{
+            width: 100%;
+            height: 150px;
+        }
+        .anh4 p {
+            font-size: larger;
+        }
+        button {
+            width: 120px;
+            height: 30px;
+            border-radius: 15px;
+            background-color: aqua;
+            color: black;
+            border: none;
+        }
+        .banner{
+            width: 100%;
+            margin-bottom: 0;
+
+        }
+        .banner img {
+            width: 100%;
+            margin :0;
+        }
+
+        footer{
+            width: 100%;
+            text-align: center;
+            background-color: aqua;
+        }
+        footer p {
+            text-align: center;
+        }
+        button:hover {
+            box-shadow: 5px 5px 20px 0 gray;
+
+        }
+    
+        @media  screen  and  (max-width : 990px) { 
+            .logo{
+                width: 100%;
+                justify-content: space-evenly;
+                padding: 10px;
+            }
+            .ok {
+                width: 100%;
+                text-align: center;
+                border-bottom: solid 1px gray ;
+                padding: 0;
+                
+
+            }
+            .haha {
+                width: 50%;
+                margin-bottom: 20px;
+            }
+            header {
+                padding: 0;
+            }
+          
+        
+        }
+        @media screen  and (max-width :576px) {
+            .ok1 {
+                width: 100%;
+                padding: 10px;
+            }
+            .ok1 a{
+                margin: 10px 0 ;
+            }
+            .ok2 {
+                width: 100%;
+            }
+            .haha , .anh4 {
+                width: 100%;
+            }
+            .anh4 img {
+                width: 80%;
+            }
+            
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="ok">
+            <img src="img/image.png" alt="">
+        </div>
+        <div class="logo">
+            <a href="">Trang chủ</a>
+            <a href="">Tổng quan Thanh Hóa</a>
+            <a href="">Tin tức</a>
+            <a href="">Dịch vụ du lịch</a>
+            <a href="">Liên hệ</a>
+        </div>
+    </header>
+    <div class="banner">
+        <img src="img/z4934212957069_38805555a753c3c20afaa07319e5c728.jpg" alt="">
+    </div>
+
+    <div class="alo1">
+        <div class="ok1">
+            <a href="">Dịch vụ du lịch</a>
+            <a href="">Khách sạn</a>
+            <a href="">Nhà hàng</a>
+            <a href="">Tour du lịch</a>
+            <a href="">Dịch vụ khác</a>
+        </div>
+
+        <div class="ok2">
+            <h2>Địa điểm du lịch</h2>
+
+            <div class="lamvoanhnhe">
+                <div class="haha"> 
+                    <img src="img//image (1).png" alt="">
+                    <p>Biển Sầm Sơn</p>
+                    <button>Xem thêm</button>
+                </div>
+                <div class="haha"> 
+                    <img src="img/image (2).png" alt="">
+                    <p>Pù Luông</p>
+                    <button>Xem thêm</button>
+                </div>
+                <div class="haha"> 
+                    <img src="img//image (3).png" alt="">
+                    <p>Bến En Thanh Hóa</p>
+                    <button>Xem thêm</button>
+                </div>
+                <div class="haha"> 
+                    <img src="img//image (4).png" alt="">
+                    <p>Thác Mây</p>
+                    <button>Xem thêm</button>
+                </div>
+                
+            </div>
+            
+            <h2 style="border-top: 1px solid gray; padding: 15px;">Tour Hot</h2>
+
+            <div class="dunganbuoi">
+                <div class="anh4"> 
+                    <img src="img//image (5).png" alt="">
+                    <p>Tour Bắc Ninh biển Hải Tiến 3 ngày 2 đêm...</p>
+                    <button>Xem thêm</button>
+                    <h4>Giá rẻ mùa thu: 2.150.000đ</h4>
+                    
+                </div>
+                <div class="anh4"> 
+                    <img src="img//image (6).png" alt="">
+                    <p>Tour Du lịch biển Sầm Sơn 3 ngày 2 đêm...</p>
+                    <button>Xem thêm</button>
+                    <h4>Giá rẻ mùa thu: 1.850.000đ</h4>
+                </div>
+                <div class="anh4"> 
+                    <img src="img//image (7).png" alt="">
+                    <p>Tour Du lịch Biển Hải Thịnh 3 ngày 2 đêm...</p>
+                    <button>Xem thêm</button>
+                    <h4>Giá rẻ mùa thu: 1.500.000đ</h4>
+                </div>
+               
+        </div>
+    </div>
+
+    <footer>
+        <h3>Công ty du lịch THANH HOA TOURIST</h3>
+        <p>Email: Thle36472003@gmail.com <br>
+        Tổng đài : 1900 0880</p>
+    </footer>
+    
+</body>
+</html>
