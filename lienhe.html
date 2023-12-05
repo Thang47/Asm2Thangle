@@ -57,8 +57,8 @@
             justify-content: space-evenly;
             width: 40%;
             height: 350px;
-            padding: 20px;
             border: 1px solid gray;
+            border-radius: 0 0 50px 0;
         }
         .ko{
             width: 40%;
@@ -69,13 +69,11 @@
             justify-content: space-evenly;
             background-color: aqua;
             font-size: larger;
-            border-radius: 30px 0 0 30px;
-
-
+            border-radius: 50px 0 0 0;
         }
         .ko h3 {
             padding: 0;
-            margin: 0;
+            margin: 0 20px;
         }
         .aloalo{
             display: flex;
@@ -86,6 +84,8 @@
         }
         input {
             height: 30px;
+            width: 90%;
+            margin: 1px auto;
             border-radius: 10px;
             padding-left: 10px;
          
@@ -93,6 +93,8 @@
         textarea {
             padding-left: 10px;
             border-radius: 10px;
+            width: 90%;
+            margin: 1px auto;
        
         }
         button {
@@ -131,40 +133,29 @@
                 padding: 0;
             }
             .ko {
-                width: 65%;
+                width: 60%;
                 height: 200px;
-                border-radius: 15px;
+                border-radius: 50px 0 0 0;
             }
             .codedcroi{
                 width: 60%;
-                border-radius: 15px;
+                border-radius: 0 0 50px 0;
             }
         }
         @media screen  and (max-width:576px) {
-            .aloalo{
-                flex-direction: column-reverse;
-                align-items: center;
-                gap:15px;
-              
-
-            }
-            .ko{
-                width:65%;
-                padding: 10px;
-                text-align: center;
-               
-              
-            }
-            #menu:checked~.logo{
-                display: block;
-            }
-            .logo{
-                display: none;
-                text-align: left;
-                margin-right: 10px;
-                border-bottom:none ;
-            }
-                
+                .aloalo{
+                    flex-direction: column-reverse;
+                    align-items: center;
+                }
+                .ko, .codedcroi{
+                    width: 70%;
+                }
+                .ko{
+                    border-radius: 0 0 30px 0;
+                }
+                .codedcroi{
+                    border-radius: 30px 0 0;
+                }
 
             }
              
@@ -177,12 +168,10 @@
         <div class="ok">
             <img src="img/image.png" alt="">
         </div>
-        <input type="checkbox" id="menu" style="display: none;">
-            <label for="menu" ><h3>Menu</h3></label>
         <div class="logo">
-            <a href="">Trang chủ</a>
+            <a href="trangchu.html">Trang chủ</a>
             <a href="">Tổng quan Thanh Hóa</a>
-            <a href="">Tin tức</a>
+            <a href="Tintuc.html">Tin tức</a>
             <a href="">Dịch vụ du lịch</a>
             <a href="">Liên hệ</a>
 

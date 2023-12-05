@@ -11,19 +11,22 @@
         }
           header{
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             flex-wrap: wrap;
-            border-bottom: 1px solid black;
-            padding: 0 50px;       
+            border-bottom: 1px solid black;       
         }
         header img {
             width: 70px ;
             height: 70px;
         }
+        .capa{
+            width: 10%;
+            text-align: left;
+        }
         .logo{
             display: flex;
             width: 50%;
-            justify-content: space-between;          
+            justify-content: space-evenly;     
                
         }
         .logo a{
@@ -31,6 +34,7 @@
             align-self: center;
             font-size: larger;
             color: black;
+            padding: 0 10px;
         }
         .logo a:hover{
             text-decoration: underline;
@@ -46,119 +50,190 @@
 
         }
             
-        .tintuc1 img {
-            padding-right: 20px;
-           
-            
+        .alo2 {
+            padding: 20px 0;
         }
 
-
-        .tintuc1{
-            display: flex;
-            width: 100%;
-        }
-        .tintuc1 img {
-            width: 60%;
-        }
-        .deoquantam{
+        .alo3{
             display: flex ;
             flex-wrap: wrap;
             width: 100%;
-            justify-content: space-between;
+            justify-content: space-evenly;
         }
         .ok1{
             width: 30%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 30px;
+            height: 450px;
+            justify-content: space-evenly;
+
+        }
+        .ok1 h3 {
+            align-items: center;
+            padding: 0;
+            margin: 5px;
+        
+        }
+        .text {
+            height: 120px;
+        }
+        .ok6 button {
+            margin-bottom: 15px;
+           
+        }
+        .ok6 {
+            width: 100%;
+            text-align: center;
+            border-top: 1px solid gray;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            height: 10px;
+            
         }
         .ok1 img {
             width: 100%;
+            height: 250px;
         }
-        .btn{
-            width: 100%;
-            text-align: center;
-        }
-
         footer{
             width: 100%;
             text-align: center;
             background-color: aqua;
+            display: flex;
+           flex-direction: column;
+           justify-content: center;
+          
+        }
+        footer p {
+            text-align: center;
+            margin: 0;
+        
+        }
+        .text{
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+        }
+        button {
+            background-color: aqua;
+            border-radius: 10px;
+            height: 30px;
+            border: none;
+        }
+        button:hover {
+            box-shadow: 5px 5px 20px 0 gray;
+           
+        }
+        .banner{
+            width: 100%;
+        }
+        .banner img {
+            width: 100%;
+        }
+        @media screen and (max-width: 990px) {
+            .ok1{
+                width: 45%;
+                height: 500px;
+            }
+            .logo, .capa{
+                width: 100%;
+                text-align: center;
+            }
+            .logo{
+                border-top: 1px solid black;
+            }
+        }
+        @media screen and (max-width: 576px){
+            .ok1{
+                width: 90%;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="img/image.png" alt="">
+        <div class="capa">
+            <img src="img/image.png" alt="">
+        </div>
+        
         <div class="logo">
-            <a href="">Trang chủ</a>
+            <a href="trangchu.html">Trang chủ</a>
             <a href="">Tổng quan Thanh Hóa</a>
             <a href="">Tin tức</a>
             <a href="">Dịch vụ du lịch</a>
-            <a href="">Liên hệ</a>
+            <a href="lienhe.html">Liên hệ</a>
         </div>
     </header>
+    
     <div class="banner">
         <img src="img/z4934212957069_38805555a753c3c20afaa07319e5c728.jpg" alt="">
     </div>
-   
 
-    <div class="alo1">
-        <div class="tintuc1">
-            <img src="img/dia-diem-du-lich-thanh-hoa-12.webp" alt="">
-            <div class="ok">
-                <h3>Đừng chỉ đi mỗi Sầm Sơn khi đến Thanh Hóa</h3>
-                <p>Bạn mới đến Thanh Hóa lần đầu và ngoài Sầm Sơn ra bạn vẫn không biết đi đâu thì bài viết này dành cho bạn</p>
-                <button>Xem chi tiết</button>                 
+    <div class="alo2">
+        <div class="alo3">
+            <div class="ok1">
+                <img src="img/image-top-13-dac-san-ngon-va-noi-tieng-nhat-thanh-hoa-164682225254156.jpg" alt="">
+                <div class="text">
+                    <h3>Tại sao nem chua Thanh Hóa lại ngon đến vậy ?</h3>
+                    <p>Nem chua là đặc sản số 1 Thanh Hóa, tuy nhiên để 1 món ăn trở thành đặc sản top 1 cần có 1 vài bí quyết. Hãy  cùng tìm hiểu trong bài viết này nhé !</p>
+                </div>
+                <button>Xem chi tiết</button>
+            </div>
+            <div class="ok1">
+                <img src="img/goi-y-10-dac-san-thanh-hoa-nuc-tieng-thich-hop-mua-ve-lam-qua-202110272301164558.jpg" alt="">
+               <div class="text">
+                    <h3>Top 10 đặc sản nổi tiếng của Thanh Hóa</h3>
+                    <p>Nếu bạn chỉ ăn nem chua mà bỏ qua những đặc sản này thì thật là 1 sai lầm rất lớn. Hãy cùng tìm hiểu trong bài viết này nhé !</p>
+               </div>
+                <button>Xem chi tiết</button>
+            </div>
+            <div class="ok1">
+                <img src="img/momo-upload-api-220603110730-637898512507734489.jpg" alt="">
+                <div class="text">
+                    <h3>Tip chụp ảnh siêu đẹp khi đi chơi ở Thanh Hóa</h3>
+                    <p>Những bức ảnh là 1 phần không thể thiếu  ở bất cứ chuyến đi nào. Tuy nhiên để có được những bức ảnh đẹp thì không phải ai cũng biết. Bài viết này sẽ tiết lộ điều đó cho bạn.</p>
+                </div>
+                <button>Xem chi tiết</button>
+            </div>
+            <div class="ok1">
+                <img src="img//393070100.jpg" alt="">
+                <div class="text">
+                    <h3>Có nên đặt phòng ở FLC Sầm Sơn ?</h3>
+                    <p>FLC Sầm Sơn là 1 trong những khách sạn nổi tiếng ở Thanh Hóa. Tuy nhiên có nên đặt phòng tại đó hay không thì bạn hãy cùng tìm hiểu trong bài viết này .</p>
+                </div>
+                <button>Xem chi tiết</button>
+            </div>
+            <div class="ok1">
+                <img src="img/image (1).png" alt="">
+               <div class="text">
+                <h3>Chi phí cho chuyến đi 3 ngày 2 đêm tại Thanh Hóa</h3>
+                <p>Nhiều bạn đắn đo không biết chuyến đi 3 ngày 2 đêm tại Thanh Hóa có đắt hay không ? Câu trả lời sẽ có ngay trong bài viết này .</p>
+               </div>
+                <button>Xem chi tiết</button>
+            </div>
+            <div class="ok1">
+                <img src="img/001-1.jpg" alt="">
+                <div class="text">
+                    <h3>Những lí do bạn nên đi Thanh Hóa ngay bây giờ</h3>
+                    <p>Nếu bạn đang phân vân có nên đến Thanh Hóa du lịch hay không thì đừng bỏ qua bài viết này !</p>
+                </div>
+                <button>Xem chi tiết</button>
             </div>
         </div>
 
-        <div class="deoquantam">
-            <div class="ok1">
-                <img src="img/goi-y-10-dac-san-thanh-hoa-nuc-tieng-thich-hop-mua-ve-lam-qua-202110272301164558.jpg" alt="">
-                <h3>hdaidhadahdah9doahda</h3>
-                <p>báidbsaiabdaiudbaiudabdiuabdaiudbaidaiug</p>
-                <button>Xem chi tiết</button>
-            </div>
-            <div class="ok1">
-                <img src="img/goi-y-10-dac-san-thanh-hoa-nuc-tieng-thich-hop-mua-ve-lam-qua-202110272301164558.jpg" alt="">
-                <h3>hdaidhadahdah9doahda</h3>
-                <p>báidbsaiabdaiudbaiudabdiuabdaiudbaidaiug</p>
-                <button>Xem chi tiết</button>
-            </div>
-            <div class="ok1">
-                <img src="img/goi-y-10-dac-san-thanh-hoa-nuc-tieng-thich-hop-mua-ve-lam-qua-202110272301164558.jpg" alt="">
-                <h3>hdaidhadahdah9doahda</h3>
-                <p>báidbsaiabdaiudbaiudabdiuabdaiudbaidaiug</p>
-                <button>Xem chi tiết</button>
-            </div>
-            <div class="ok1">
-                <img src="img/goi-y-10-dac-san-thanh-hoa-nuc-tieng-thich-hop-mua-ve-lam-qua-202110272301164558.jpg" alt="">
-                <h3>hdaidhadahdah9doahda</h3>
-                <p>báidbsaiabdaiudbaiudabdiuabdaiudbaidaiug</p>
-                <button>Xem chi tiết</button>
-            </div>
-            <div class="ok1">
-                <img src="img/goi-y-10-dac-san-thanh-hoa-nuc-tieng-thich-hop-mua-ve-lam-qua-202110272301164558.jpg" alt="">
-                <h3>hdaidhadahdah9doahda</h3>
-                <p>báidbsaiabdaiudbaiudabdiuabdaiudbaidaiug</p>
-                <button>Xem chi tiết</button>
-            </div>
-            <div class="ok1">
-                <img src="img/goi-y-10-dac-san-thanh-hoa-nuc-tieng-thich-hop-mua-ve-lam-qua-202110272301164558.jpg" alt="">
-                <h3>hdaidhadahdah9doahda</h3>
-                <p>báidbsaiabdaiudbaiudabdiuabdaiudbaidaiug</p>
-                <button>Xem chi tiết</button>
-            </div>
-        </div>
-
-        <div class="btn">
+        <div class="ok6">
             <button>Trang kế tiếp</button>
         </div>
     </div>
     
     <footer>
-        <h3>Công t</h3>
-        <p>Email <br>
+        <h3>Công ty du lịch THANH HOA TOURIST</h3>
+        <p>Email: Thle36472003@gmail.com <br>
         Tổng đài : 1900 0880</p>
     </footer>
     
+   
 </body>
 </html>
